@@ -40,16 +40,13 @@
 */
 
 
-function showValues(){
-  let newString = ''
-  for(let key in obj){
-    newStr + `${key}`
-    }
-    return newString
+const showValues = obj => {
+  let newStr = ''
+  for(let prop in obj){
+      newStr += obj[prop]
   }
-  
-
-
+  return newStr
+}
 ////////// PROBLEM 2 //////////
 
 /*
@@ -58,14 +55,14 @@ function showValues(){
   Return the updated object.
 */
 
-function greaterThan10 (obj) {
-  for(let key in obj) {
-    if(obj[key] > 10) {
-      obj[key] = 0
+const greaterThan10 = obj => {
+  for(let prop in obj){
+    if(obj[prop] > 10){
+      obj[prop] = 0
     }
-  } return
+    }
+  return obj
 }
-
 
 ////////// PROBLEM 3 //////////
 
@@ -76,11 +73,12 @@ function greaterThan10 (obj) {
 */
 
 //Code Here
-function double (obj) {
-  for(key in obj){
-    obj[key] * 2
-  } return
-} 
+const double = obj =>{
+  for (let key in obj){
+    obj[key] *= 2 
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -202,4 +200,3 @@ const hiddenTreasure = obj => {
   }
   return obj
 }
-

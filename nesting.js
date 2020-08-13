@@ -87,8 +87,8 @@ const removeDuplicates = () => {
       workplaceAccidents.splice(i, 1)
       }
     }
-    return workplaceAccidents
   }
+  return workplaceAccidents
 }
 
 
@@ -117,9 +117,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity = cat.catFriends[i];
-var fluffy2ndFriend = cat.catFriends[name];
-
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 ////////// PROBLEM 4 //////////
@@ -160,8 +159,10 @@ var myCar = {
 
 //Code Here
 function recordCleaner() {
-  let arr = accidents.filter.myCar[accidents].atFaultForAccident{
+  for (let i = 0; i <= myCar.accidents.length - 1; i++){
+    myCar.accidents[i].atFaultForAccident = false
   }
+  
 }
 
 
